@@ -1,33 +1,33 @@
-name: Factions
+name: Guilds
 version: 1.8.1
 main: com.massivecraft.factions.P
 authors: [Olof Cayorion Larsson, Brett Flannigan]
 softdepend: [PermissionsEx, Permissions, Essentials, EssentialsChat, HeroChat, iChat, LocalAreaChat, LWC, nChat, ChatManager, CAPI, AuthMe, Vault, Spout, WorldEdit, WorldGuard, AuthDB, CaptureThePoints, CombatTag]
 commands:
   factions:
-    description: The Factions base command
+    description: The Guild base command
     aliases: [f]
 permissions:
 # -------------------------------------------- #
 # THE REAL NODES
 # -------------------------------------------- #
-  factions.access: {description: grant territory access for your faction, with the proper fperm}
-  factions.access.any: {description: grant territory access for any faction}
-  factions.access.view: {description: view territory access info for your faction}
-  factions.adminmode: {description: enable admin bypass mode}
-  factions.autoclaim: {description: auto-claim land as you walk around}
-  factions.cape: {description: manage faction capes}
-  factions.cape.get: {description: get faction cape}
-  factions.cape.set: {description: set faction cape}
-  factions.cape.remove: {description: remove faction cape}
-  factions.claim: {description: claim land where you are standing}
+  guilds.access: {description: grant territory access for your guild, with the proper fperm}
+  guilds.access.any: {description: grant territory access for any guild}
+  guilds.access.view: {description: view territory access info for your guild}
+  guilds.adminmode: {description: enable admin bypass mode}
+  guilds.autoclaim: {description: auto-claim land as you walk around}
+  guilds.cape: {description: manage guild capes}
+  guilds.cape.get: {description: get faction cape}
+  guilds.cape.set: {description: set guild cape}
+  guilds.cape.remove: {description: remove guild cape}
+  guilds.claim: {description: claim land where you are standing}
   factions.config: {description: change a conf.json setting}
   factions.create: {description: create a new faction}
   factions.deinvite: {description: remove a pending invitation}
-  factions.description: {description: change the faction description}
+  factions.description: {description: change the guild description}
   factions.disband: {description: disband a faction}
   factions.flag: {description: read faction flags}
-  factions.flag.set: {description: set faction flags}
+  factions.flag.set: {description: set guild flags}
   factions.help: {description: display a help page}
   factions.home: {description: teleport to the faction home}
   factions.invite: {description: invite a player to your faction}

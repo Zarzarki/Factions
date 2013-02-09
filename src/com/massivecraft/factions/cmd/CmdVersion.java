@@ -4,7 +4,7 @@ import com.massivecraft.factions.P;
 import com.massivecraft.factions.struct.Permission;
 
 
-public class CmdVersion extends FCommand
+public class CmdVersion extends GCommand
 {
 	public CmdVersion()
 	{

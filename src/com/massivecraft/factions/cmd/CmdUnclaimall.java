@@ -37,11 +37,11 @@ public class CmdUnclaimall extends GCommand
 			double refund = Econ.calculateTotalLandRefund(myFaction.getLandRounded());
 			if(Conf.bankEnabled && Conf.bankFactionPaysLandCosts)
 			{
-				if ( ! Econ.modifyMoney(myFaction, refund, "to unclaim all Guild's land", "for unclaiming all Guild's land")) return;
+				if ( ! Econ.modifyMoney(myFaction, refund, "to unclaim all Guild land", "for unclaiming all Guild land")) return;
 			}
 			else
 			{
-				if ( ! Econ.modifyMoney(fme      , refund, "to unclaim all Guild's land", "for unclaiming all Guild's land")) return;
+				if ( ! Econ.modifyMoney(fme      , refund, "to unclaim all Guild land", "for unclaiming all Guild land")) return;
 			}
 		}
 

@@ -13,7 +13,7 @@ import com.massivecraft.factions.P;
 import com.massivecraft.factions.struct.FPerm;
 import com.massivecraft.factions.struct.Permission;
 
-public class CmdUnclaim extends FCommand
+public class CmdUnclaim extends GCommand
 {
 	public CmdUnclaim()
 	{

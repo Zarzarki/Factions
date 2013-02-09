@@ -10,7 +10,7 @@ import com.massivecraft.factions.integration.Econ;
 import com.massivecraft.factions.integration.SpoutFeatures;
 import com.massivecraft.factions.struct.Permission;
 
-public class CmdUnclaimall extends FCommand
+public class CmdUnclaimall extends GCommand
 {	
 	public CmdUnclaimall()
 	{
@@ -37,11 +37,11 @@ public class CmdUnclaimall extends FCommand
 			double refund = Econ.calculateTotalLandRefund(myFaction.getLandRounded());
 			if(Conf.bankEnabled && Conf.bankFactionPaysLandCosts)
 			{
-				if ( ! Econ.modifyMoney(myFaction, refund, "to unclaim all faction land", "for unclaiming all faction land")) return;
+				if ( ! Econ.modifyMoney(myFaction, refund, "to unclaim all Guild's land", "for unclaiming all Guild's land")) return;
 			}
 			else
 			{
-				if ( ! Econ.modifyMoney(fme      , refund, "to unclaim all faction land", "for unclaiming all faction land")) return;
+				if ( ! Econ.modifyMoney(fme      , refund, "to unclaim all Guild's land", "for unclaiming all Guild's land")) return;
 			}
 		}
 
@@ -50,11 +50,11 @@ public class CmdUnclaimall extends FCommand
 		// this event cannot be cancelled
 
 		Board.unclaimAll(myFaction.getId());
-		myFaction.msg("%s<i> unclaimed ALL of your faction's land.", fme.describeTo(myFaction, true));
+		myFaction.msg("%s<i> unclaimed ALL of your Guild's land.", fme.describeTo(myFaction, true));
 		SpoutFeatures.updateTerritoryDisplayLoc(null);
 
 		if (Conf.logLandUnclaims)
-			P.p.log(fme.getName()+" unclaimed everything for the faction: "+myFaction.getTag());
+			P.p.log(fme.getName()+" unclaimed everything for the Guild: "+myFaction.getTag());
 	}
 	
 }
